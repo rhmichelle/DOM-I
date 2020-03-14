@@ -41,13 +41,34 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let nav = document.querySelectorAll("a");
-nav[0].textContent = siteContent.nav["nav-item-1"];
-nav[1].textContent = siteContent.nav["nav-item-2"];
-nav[2].textContent = siteContent.nav["nav-item-3"];
-nav[3].textContent = siteContent.nav["nav-item-4"];
-nav[4].textContent = siteContent.nav["nav-item-5"];
-nav[5].textContent = siteContent.nav["nav-item-6"];
+
+
+
+
+
+let navigation = document.querySelectorAll("a");
+navigation[0].textContent = siteContent.nav["nav-item-1"];
+navigation[1].textContent = siteContent.nav["nav-item-2"];
+navigation[2].textContent = siteContent.nav["nav-item-3"];
+navigation[3].textContent = siteContent.nav["nav-item-4"];
+navigation[4].textContent = siteContent.nav["nav-item-5"];
+navigation[5].textContent = siteContent.nav["nav-item-6"];
+
+navigation.forEach(element => {
+  element.style.color = "green";
+});
+
+
+let sparkles = document.createElement("a");
+sparkles.textContent = "Sparkly Unicorn";
+document.querySelector("nav").prepend(sparkles);
+
+let fluffy = document.createElement("a");
+fluffy.textContent = "Fluffy Bunny";
+document.querySelector("nav").appendChild(fluffy);
+
+
+
 
 let headerText = document.querySelector(".cta .cta-text h1");
 headerText.textContent = siteContent.cta.h1;
