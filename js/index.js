@@ -62,10 +62,14 @@ navigation.forEach(element => {
 let sparkles = document.createElement("a");
 sparkles.textContent = "Sparkly Unicorn";
 document.querySelector("nav").prepend(sparkles);
+console.log(document.querySelectorAll("a"));
+
 
 let fluffy = document.createElement("a");
 fluffy.textContent = "Fluffy Bunny";
 document.querySelector("nav").appendChild(fluffy);
+
+
 
 
 
