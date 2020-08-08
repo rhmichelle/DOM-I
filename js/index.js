@@ -37,10 +37,18 @@ const siteContent = {
   },
 };
 
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
+// Stretch 
+let allPs = document.querySelectorAll("p");
+allPs.forEach(element => {
+  element.style.fontFamily = '"Lucida Sans Unicode", "Lucida Grande", sans-serif'
+})
 
 
 
@@ -76,6 +84,8 @@ document.querySelector("nav").appendChild(fluffy);
 
 let headerText = document.querySelector(".cta .cta-text h1");
 headerText.textContent = siteContent.cta.h1;
+// stretch
+headerText.style.fontFamily = 'Impact, Charcoal, sans-serif'
 
 let bttn = document.querySelector(".cta .cta-text button");
 bttn.textContent = siteContent.cta.button;
@@ -86,6 +96,10 @@ headerImage.setAttribute('src', siteContent['cta']['img-src']);
 let toph4 = document.querySelectorAll(".top-content .text-content h4");
 toph4[0].textContent = siteContent["main-content"]["features-h4"];
 toph4[1].textContent = siteContent["main-content"]["about-h4"];
+// stretch
+toph4.forEach (element => {
+  element.style.fontFamily = "Impact, Charcoal, sans-serif";
+})
 
 let topText = document.querySelectorAll(".top-content .text-content p");
 topText[0].textContent = siteContent["main-content"]["features-content"];
@@ -100,6 +114,10 @@ let bottomh4 = document.querySelectorAll(".bottom-content .text-content h4");
 bottomh4[0].textContent = siteContent["main-content"]["services-h4"];
 bottomh4[1].textContent = siteContent["main-content"]["product-h4"];
 bottomh4[2].textContent = siteContent["main-content"]["vision-h4"];
+// stretch
+bottomh4.forEach (element => {
+  element.style.fontFamily = "Impact, Charcoal, sans-serif";
+})
 
 let bottomP = document.querySelectorAll(".bottom-content .text-content p");
 bottomP[0].textContent = siteContent["main-content"]["services-content"];
@@ -109,6 +127,8 @@ bottomP[2].textContent = siteContent["main-content"]["vision-content"];
 
 let contactHeader = document.querySelector(".contact h4");
 contactHeader.textContent = siteContent["contact"]["contact-h4"];
+// stretch
+contactHeader.style.fontFamily = "Impact, Charcoal, sans-serif";
 
 let contactP = document.querySelectorAll(".contact p");
 contactP[0].textContent = siteContent.contact.address;
